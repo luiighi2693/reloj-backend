@@ -1,0 +1,14 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": "5432",
+    "db": "admin",
+    "user": "postgres",
+    "password": "postgres"
+  },
+  "host": "localhost",
+  "mainPort": "8080",
+  "commentPort": "8081",
+  "userPort": "8081",
+  "relojPort": "8081"
+}

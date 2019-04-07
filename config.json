@@ -1,0 +1,14 @@
+{
+  "database": {
+    "host": "190.30.247.106",
+    "port": "52891",
+    "db": "vanesaduran_catalogo_paralelo",
+    "user": "luciana.vila",
+    "password": "8FBjmXCS9T4vp9CQ"
+  },
+  "host": "localhost",
+  "mainPort": "8080",
+  "commentPort": "8081",
+  "userPort": "8081",
+  "relojPort": "8081"
+}
