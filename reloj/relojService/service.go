@@ -43,7 +43,7 @@ func VerifyDniAndPassword(user relojEntitie.User) (hasError bool, err error) {
 	return relojModel.VerifyDniAndPassword(user)
 }
 
-func VerifyMarkByOperation(nroDoc string, operation string) (hasError bool, err error) {
+func VerifyMarkByOperation(nroDoc string, operation string) (hasError bool, err error, message string) {
 	return relojModel.VerifyMarkByOperation(nroDoc, operation)
 }
 

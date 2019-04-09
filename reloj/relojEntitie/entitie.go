@@ -9,6 +9,14 @@ type User struct {
 	Nombres   string
 	Apellido  string
 	Operation string
+	In1       string
+	In2       string
+	Flexible  int
+}
+
+type Area struct {
+	Supervisor string
+	Encargado  string
 }
 
 type Reloj struct {

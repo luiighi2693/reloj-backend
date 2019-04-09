@@ -76,15 +76,15 @@ func SetEndpoints(app *iris.Application, configFile string) {
 			ctx.StatusCode(iris.StatusBadRequest)
 			_, _ = ctx.WriteString(err.Error())
 		} else {
-			hasError, err := relojService.VerifyMarkByOperation(user.NroDoc, user.Operation) //I - O
-			/*if !hasError {
-				_, _ = ctx.JSON(iris.Map{"hasError": hasError, "error": nil})
+			message := ""
+			hasError, err, message := relojService.VerifyMarkByOperation(user.NroDoc, user.Operation) //I - O
+			if !hasError {
+				_, _ = ctx.JSON(iris.Map{"hasError": hasError, "error": nil, "message": message})
 			} else {
-				_, _ = ctx.JSON(iris.Map{"hasError": hasError, "error": err.Error()})
-			}*/
+				_, _ = ctx.JSON(iris.Map{"hasError": hasError, "error": err.Error(), "message": message})
+			}
 		}
 	})
-
 	//app.Post("/user/", func(ctx iris.Context) {
 	//	user := relojEntitie.User{}
 	//	err := ctx.ReadJSON(&user)
